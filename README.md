@@ -1,2 +1,2 @@
 # A sample app to use the copyleaks API to check user submitted text for plagiarism.
-App Framework obtained from the sample apps on Spring Boot website.
+App Framework obtained from [Spring boot starter web](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web)
