@@ -1,15 +1,51 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <title>Getting Started: Handling Form Submission</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bulma.css}" />
 </head>
+
 <body>
-	<h1>Submit Text to be Checked here</h1>
-    <form action="#" th:action="@{/submit}" th:object="${plagtext}" method="post">
-    	<p>Id: <input type="text" th:field="*{id}" /></p>
-        <p>Message: <input type="text" th:field="*{content}" /></p>
-        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
-    </form>
+    <section class="hero is-primary">
+        <nav class="nav has-shadow">
+            <div class="nav-center">
+                <a class="nav-item">
+                    <img th:src="@{/images/logo.png}" alt="Plagdetect logo"></img>
+                </a>
+                <a class="nav-item"> 
+                    <h1 class="title">Plagdetect </h1>
+                </a>
+            </div>
+        </nav>
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Submit Text to be checked for plagiarism here
+                </h1>
+                <h2 class="subtitle">
+                    File uploads are also possible
+                </h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="column">
+                <div class="tile is-parent">
+                    <div class="content">
+                        <form action="#" th:action="@{/submit}" th:object="${plagtext}" method="post">
+                            <label class="label">Submit text below</label>
+                            <p class="control"> <input class="input is-large" type="text" th:field="*{content}" /></p>
+                            <p>
+                                <input class="button is-primary" type="submit" value="Submit" />
+                                <input class="button " type="reset" value="Reset" />
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
