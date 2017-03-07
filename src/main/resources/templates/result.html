@@ -1,13 +1,47 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <title>Plagcheck results</title>
+    <title>Plagdetect - Your friendly plagiarism assistant</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bulma.css}" />
 </head>
+
 <body>
-	<h1>Result</h1>
-    <p th:text="'id: ' + ${plagtext.id}" />
-    <p th:text="'content: ' + ${plagtext.content}" />
-    <a href="/submit">Submit more text</a>
+    <section class="hero is-dark">
+        <nav class="nav has-shadow">
+            <div class="nav-center">
+                <a class="nav-item">
+                    <img th:src="@{/images/logo.png}" alt="Plagdetect logo"></img>
+                </a>
+                <a class="nav-item">
+                    <h1 class="title">Plagdetect </h1>
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="column">
+                <div class="tile is-parent">
+                    <div class="content">
+                        <h1>Result</h1>
+                        <p class="notification" th:text="'content: ' + ${plagtext.content}" />
+                        <a class="button is-primary" href="/">Submit more text</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Built using <a href="https://github.com/jgthms/bulma">Bulma</a>, <a href="https://projects.spring.io/spring-boot/">Spring Boot</a> and hosted on <a href="https://heroku.com/">Heroku</a>
+      </p>
+      <p>
+        Source code available at <a href="https://github.com/prajnak/plagdetect"></a>
+      </p>
+    </div>
+  </div>
+</footer>
 </html>

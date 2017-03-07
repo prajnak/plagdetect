@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class PlagcheckController {
 
     // map a get request to the plagtextForm method
-    @GetMapping("/submit")
+    @GetMapping("/")
     public String plagtextForm(Model model) {
         model.addAttribute("plagtext", new Plagtext());
         return "plagtext"; 
