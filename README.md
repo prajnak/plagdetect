@@ -3,3 +3,14 @@ App Framework obtained from [Spring boot starter web](https://mvnrepository.com/
 
 App has been deployed to heroku here:
 [https://safe-fjord-76241.herokuapp.com/submit](https://safe-fjord-76241.herokuapp.com/submit)
+
+## Build Instructions
+Get all the dependencies and build from scratch
+```
+./mvnw -DskipTests clean dependency:list install
+```
+
+## Run locally
+```
+./mvnw spring-boot:run
+```
