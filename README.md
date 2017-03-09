@@ -1,6 +1,6 @@
 # A sample app to use the copyleaks API to check user submitted text for plagiarism.
 ### App has been deployed to heroku here:
-[https://safe-fjord-76241.herokuapp.com/submit](https://safe-fjord-76241.herokuapp.com/submit)
+[https://safe-fjord-76241.herokuapp.com](https://safe-fjord-76241.herokuapp.com)
 
 ## Screenshots
 ![Main Screen](home.png)
